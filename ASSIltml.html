@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+	<body>
+    <img id="logo" src="https://images2.imgbox.com/9c/50/reTC6mrv_o.jpg" alt="شعار الشركة">
+</body>
+<style>
+    #logo {
+        display: block;
+        margin: 0 auto; /* يُركز الشعار أفقياً في الوسط */
+        max-width: 50%; /* يُحدد العرض الأقصى للشعار */
+        height: auto; /* يحافظ على تناسب الأبعاد */
+        margin-top: 50px; /* يُضبط المسافة بين الشعار والأعلى */
+    }
+</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>بطاقة التسجيل الخاصة بالثانوية التأهيلية سيدي محمد بن عبد الله الصويرة </title>
+  <style>
+    body {
+      font-family: 'Tajawal' , sans-serif;
+      text-align: center;
+    }
+    .container {
+      margin-top: 50px;
+    }
+
+    .blue-button {
+      background-color: blue;
+      color: white;
+      padding: 20px 30px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 28px;
+    }
+
+    .blue-button:hover {
+      background-color: darkblue;
+    }
+
+    form {
+      margin-top: 40px;
+      direction: rtl;
+    }
+
+    form label {
+      font-size: 20px;
+    }
+
+    form input, form select {
+      width: 250px;
+      padding: 10px;
+      margin: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      direction: ltr;
+          font-size: 18px;
+          
+    }
+
+    form input[type="submit"], form input[type="button"] {
+      background-color: blue;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      cursor: pointer;
+      direction:rtl;
+    }
+
+    form input[type="submit"]:hover, form input[type="button"]:hover {
+      background-color: darkblue;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .success-message {
+      margin-top: 40px;
+    }
+    .back-button, .print-button {
+      background-color: blue;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 25px;
+      text-decoration: none;
+      margin-top: 20px;
+    }
+
+    .back-button:hover, .print-button:hover {
+      background-color: darkblue;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>مرحباً في هذه الصفحة الخاصة بطباعة بطاقة التسجيل الخاصة بالثانوية التأهيلية سيدي محمد بن عبد الله بالصويرة </h1>
+    <button onclick="showForm()" class="blue-button">دخول</button>
+  </div>
+
+  <div id="form" class="hidden">
+    <h2>المرجو إدخال المعلومات بكل دقة</h2>
+    <form id="formData">
+      <label for="fname">الاسم الشخصي للتلميذ(ة) :</label><br>
+      <input type="text" id="fname" name="fname"required><br>
+<label for="lname">الاسم العائلي للتلميذ(ة) :</label><br>
+<input type="text" id="lname" name="lname" required><br>
+<label for="code">رقم مسار التلميذ(ة) :</label><br>
+<input type="text" id="code" name="code" pattern="[G]{1}-[0-9]{9}" placeholder="G*********" required><br><br>
+  <label for="level">المستوى الدراسي للتلميذ (ة) :</label><br>
+      <select id="level" name="level" required>
+        <option value="جذع مشترك علمي خيار فرنسية">جذع مشترك علمي خيار فرنسية</option>
+        <option value="جذع مشترك آداب وعلوم إنسانية">جذع مشترك آداب وعلوم إنسانية</option>
+       <option value="جذع اصيل">جذع اصيل</option>
+       <option value="أولى باكالوريا علوم تجريبية خيار فرنسية ">أولى باكالوريا علوم تجريبية خيار فرنسية </option>
+             <option value="أولى باكالوريا علوم رياضية خيار فرنسية ">أولى باكالوريا علوم رياضية خيار فرنسية </option>
+     <option value="أولى باكالوريا آداب وعلوم إنسانية  ">أولى باكالوريا آداب وعلوم إنسانية </option>
+     <option value="أولى باكالوريا علوم شرعية ">أولى باكالوريا علوم شرعية  </option>
+     <option value="
+ الثانيــة باكالوريا علوم فيزيائية خيار فرنسية ">الثانية باكالوريا علوم فيزيائية خيار فرنسية </option>
+       <option value="الثانيــة باكالوريا علوم إنسانية "> الثانية باكالوريا علوم إنسانية </option>
+       <option value="الثانيــة باكالوريا علوم شرعية "> الثانية باكالوريا علوم شرعية </option>
+      </select><br>
+      <label for="dob">تاريخ ازدياد التلميذ(ة) :</label><br>
+      <input type="date" id="dob" name="dob" required><br>
+      <label for="pob">مكان ازدياد التلميذ(ة) :</label><br>
+      <input type="text" id="pob" name="pob" required><br>
+      <label for="parent_name">الاسم الكامل لولي أمر التلميذ(ة):</label><br>
+      <input type="text" id="parent_name" name="parent_name" required><br>
+      <label for="parent_address">عنوان ولي أمر التلميذ(ة) :</label><br>
+      <input type="text" id="parent_address" name="parent_address" required><br>
+      <label for="parent_phone">رقم هاتف ولي أمر التلميذ(ة) :</label><br>
+      <input type="tel" id="parent_phone" name="parent_phone" pattern="[0]{1}-[6-7]{1}-[0-9]{8}" placeholder="رقم الهاتف يبدأ ب 06 أو 07" required><br><br>
+      <input type="button" value="حفظ المعلومات" onclick="saveData()">
+    </form>
+  </div>
+
+  <div id="success" class="hidden success-message">
+    <h1>المرجو طباعة الاستمارة بالضغط على زر طباعة و المصادقة عليها من طرف ولي أمرك لدى السلطات المختصة و تسليمها رفقة باقي الوثائق المطلوبة الى الحراسة العامة وشكرا </h1>
+    <button onclick="printPreviousPage()" class="print-button">طباعة البطاقة</button>
+  </div>
+
+  <script>
+    function showForm() {
+      document.querySelector('.container').classList.add('hidden');
+      document.getElementById('form').classList.remove('hidden');
+    }
+
+    function saveData() {
+      var formData = new FormData(document.getElementById("formData"));
+      var values = {};
+      formData.forEach((value, key) => {
+        values[key] = value;
+      });
+
+      if (Object.values(values).some(value => value === '')) {
+        alert('الرجاء إدخال جميع المعلومات');
+      } else {
+        document.getElementById('form').classList.add('hidden');
+        document.getElementById('success').classList.remove('hidden');
+      }
+    }
+
+    function printPreviousPage() {
+      window.history.back();
+    }
+  </script>
+    <script>
+    	function printPreviousPage() {
+  var formData = new FormData(document.getElementById("formData"));
+  var values = {};
+  formData.forEach((value, key) => {
+    values[key] = value;
+  });
+  var newWindow = window.open('', '_blank');
+  var htmlContent = `
+    <!DOCTYPE html>
+    <html lang="ar">
+    <head>
+      <meta charset="UTF-8">
+      <title>بطاقة التسجيل بالثانوية التأهيلية سيدي محمد بن عبد الله </title>
+      <style>
+        body {
+          text-align: right; /* تحديد النصوص من اليمين إلى اليسار */
+          font-size: 25px; /* زيادة حجم خط النص */
+        }
+        h1 {
+          text-align: center; /* توسيط العنوان */
+        }
+        .center {
+          text-align: center; /* توسيط النص */
+        }
+        .rtl-text {
+          direction: rtl; /* تحديد اتجاه النص من اليمين إلى اليسار */
+        }
+      </style>
+    </head>
+    <body>
+    	<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>بطاقة التسجيل بالثانوية التأهيلية سيدي محمد بن عبد الله </title>
+  <style>
+    body {
+      text-align: right;
+      font-size: 25px;
+    }
+    h1 {
+      text-align: center;
+    }
+    .center {
+      text-align: center;
+    }
+    .rtl-text {
+      direction: rtl;
+    }
+    #logo {
+      max-width: 300px; /* تحديد العرض الأقصى للصورة */
+      display: block; /* جعل الصورة عنصرا مستقلًا */
+      margin: 20px auto; /* توسيط الصورة وتحديد المسافة من الأعلى */
+    }
+    
+  </style>
+</head>
+<body>
+  <!-- لوغو الطباعة -->
+  <img id="logo" src="https://images2.imgbox.com/9c/50/reTC6mrv_o.jpg" alt="شعار الشركة">
+<h1 style="font-size: 30px;">بطاقة التسجيل 2025/2024</h1>
+</body>
+</html>
+      <p>الاسم الشخصي: ${values['fname']}●</p>
+      <p>الاسم العائلي: ${values['lname']}●</p>
+      <p class="rtl-text">●رقم مسار: ${values['code']}</p> <!-- Added rtl-text class -->
+      <p>المستوى الدراسي: ${values['level']}●</p>
+      <p>تاريخ الازدياد: ${values['dob']}●</p>
+      <p>مكان الازدياد: ${values['pob']}●</p>
+      <p>اسم ولي الأمر: ${values['parent_name']}●</p>
+      <p>عنوان ولي الأمر: ${values['parent_address']}●</p>
+      <p>رقم هاتف ولي الأمر: ${values['parent_phone']}●</p>
+      <p class="center">توقيع ولي الأمر مصادق عليه يقر بصحة المعلومات الواردة في هذه البطاقة</p>
+    </body>
+    </html>
+  `;
+  newWindow.document.write(htmlContent);
+  newWindow.document.close();
+  newWindow.print();
+
+  document.getElementById('form').classList.add('hidden');
+  document.getElementById('success').classList.remove('hidden');
+}
+</script>
+</body>
+</html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مؤسسة تعليمية</title>
+    <style>
+        body {
+            background-image: url("https://thumbs2.imgbox.com/f1/6c/ul7Ls0FY_t.jpeg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            /* يمكنك تخصيص المزيد من الخصائص هنا */
+        }
+    </style>
+    <script>
+    function saveData() {
+  var formData = new FormData(document.getElementById("formData"));
+  var values = {};
+  formData.forEach((value, key) => {
+    values[key] = value;
+  });
+
+  // التحقق من تعبئة جميع الحقول
+  if (Object.values(values).some(value => value === '')) {
+    alert('الرجاء إدخال جميع المعلومات');
+    return;
+  }
+// التحقق من صحة رقم المسار
+  var code = values['code'];
+  var codeRegex = /^[A-Za-z]\d{9}$/; // Regex للتحقق من صحة رقم المسار مع السماح بأي حرف لاتيني
+  
+  if (!codeRegex.test(code)) {
+    alert('الرجاء إدخال رقم مسار صحيح (مثال: G123456789)');
+    return;
+  }
+    // التحقق من تاريخ الازدياد
+  var dob = new Date(values['dob']);
+  var today = new Date();
+  var age = today.getFullYear() - dob.getFullYear();
+  var m = today.getMonth() - dob.getMonth();
+  if (m < 0 || (m === 0 && today.getDate() < dob.getDate())) {
+    age--;
+  }
+
+  if (age < 14 || age > 22) {
+    alert('ادخل تاريخ ازدياد صحيح');
+    return;
+  }
+  // التحقق من صحة رقم الهاتف
+  var phoneNumber = values['parent_phone'];
+  var phoneRegex = /^(0[6-7])-?\d{8}$/; // Regex للتحقق من صحة الرقم الهاتفي
+  
+  if (!phoneRegex.test(phoneNumber)) {
+    alert('الرجاء إدخال رقم هاتف صحيح');
+    return;
+  }
+  // إذا تم تجاوز جميع الشروط، قم بإخفاء النموذج وعرض رسالة النجاح
+  document.getElementById('form').classList.add('hidden');
+  document.getElementById('success').classList.remove('hidden');
+}
+</script>
+</head>
+</html>
